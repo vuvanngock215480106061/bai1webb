@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phòng Đặt</title>
     <link rel="stylesheet" href="style.css">
+
     <script>
         function NhanCV(s){
             document.getElementById('chuvi').innerHTML = "Chu vi: "+s;
         }
         function NhanDT(s){
-            document.getElementById('dientich').innerHTML = "Diện tích: " s;
+            document.getElementById('dientich').innerHTML = "Diện tích: " +s;
         }
         function tinhtoan(){
             var dai = document.getElementById('dai').value;
@@ -34,11 +35,11 @@
 <input type="number" id="dai" placeholder="Nhập chiều dài"><br><br>
 <label for="rong">Chiều rộng:</label>
 <input type="number" id="rong" placeholder="Nhập chiều rộng"><br><br>
-<button onclick="tinhToan()">Tính</button>
+<button onclick="tinhtoan()">Tính</button>
 <p id="chuvi"></p>
 <p id="dientich"></p>
 
-<img src="img.jpg">
+<img src="img.jpg" width="230" height="400">
 
 
 <video width="320" height="240" controls>

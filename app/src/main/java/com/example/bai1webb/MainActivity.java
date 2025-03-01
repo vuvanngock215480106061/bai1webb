@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 hinhChuNhat.setDai(Integer.parseInt(dai.getText().toString()));
                 hinhChuNhat.setRong(Integer.parseInt(rong.getText().toString()));
                 chuvi.setText("Chu vi: " + hinhChuNhat.chuvi());
-                chuvi.setText("Diện tích: " + hinhChuNhat.dientich());
+                dientich.setText("Diện tích: " + hinhChuNhat.dientich());
             }
         });
         chuyen.setOnClickListener(new View.OnClickListener() {
