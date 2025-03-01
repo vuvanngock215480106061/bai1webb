@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phòng Đặt</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function NhanCV(s){
+            document.getElementById('chuvi').innerHTML = "Chu vi: "+s;
+        }
+        function NhanDT(s){
+            document.getElementById('dientich').innerHTML = "Diện tích: " s;
+        }
+        function tinhtoan(){
+            var dai = document.getElementById('dai').value;
+            var rong = document.getElementById('rong').value;
+            window.Android.xuly(dai, rong);
+        }
+    </script>
+
+</head>
+<body>
+
+<div class="info">
+    <label><strong>Họ và Tên:</strong> Vũ Văn Ngọc</label><br>
+    <label><strong>MSSV:</strong> K215480106061</label><br>
+    <label><strong>Email:</strong> K215480106061@tnut.edu.vn</label><br>
+    <label><strong>Lớp: </strong> K57KMT</label><br>
+</div>
+
+<h2>Tính Chu Vi và Diện Tích Hình Chữ Nhật</h2>
+<label for="dai">Chiều dài:</label>
+<input type="number" id="dai" placeholder="Nhập chiều dài"><br><br>
+<label for="rong">Chiều rộng:</label>
+<input type="number" id="rong" placeholder="Nhập chiều rộng"><br><br>
+<button onclick="tinhToan()">Tính</button>
+<p id="chuvi"></p>
+<p id="dientich"></p>
+
+<img src="img.jpg">
+
+
+<video width="320" height="240" controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<iframe width="100%" height="315"
+        src="https://www.youtube.com/watch?v=Y_sV5BZZLxo"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+</iframe>
+
+</body>
+</html>
